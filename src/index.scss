@@ -1,2 +1,37 @@
 @import "./styles/reset.scss";
 @import "./styles/vars.scss";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $mainColor;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    font-size: 5.5rem;
+    font-family: $secondaryFont;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-family: $secondaryFont;
+    font-size: 700;
+    line-height: 1.3;
+}

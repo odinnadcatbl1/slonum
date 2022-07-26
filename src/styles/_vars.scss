@@ -1,0 +1,36 @@
+$mainColor: #ffffff;
+$mainAccentColor: #14a76c;
+$additionalAccentColor: #ff652f;
+
+$primaryFont: "Rubik", sans-serif;
+$secondaryFont: "Nunito", sans-serif;
+
+$mainFontColor: #1f1d2a;
+$additionalFontColor: #9fa0a7;
+$pointFontColor: #4f5569;
+
+$primaryButtonsColor: $mainAccentColor;
+$secondaryButtonsColor: $mainColor;
+
+%mainTextStyle {
+    font-family: $primaryFont;
+    font-weight: 400;
+    color: $mainFontColor;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+%secondaryTextStyle {
+    @extend %mainText;
+    color: $pointFontColor;
+    font-size: 1.8rem;
+}
+
+%navStyle {
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    line-height: 1.4;
+    text-align: center;
+    color: $mainFontColor;
+}
