@@ -24,7 +24,7 @@ const Intro: React.FC = () => {
                                 Участвовать
                             </button>
                             <div className="intro__timer">
-                                <Timer days={"2"} />
+                                <Timer endtime={"2022-08-05"} />
                             </div>
                         </div>
                     </div>

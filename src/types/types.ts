@@ -1,3 +1,3 @@
 export interface ITimer {
-    days: string;
+    endtime: string;
 }
