@@ -1,0 +1,17 @@
+@import "../../styles/vars.scss";
+
+.header {
+    position: absolute;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__button {
+    @extend %secondButton;
+}
