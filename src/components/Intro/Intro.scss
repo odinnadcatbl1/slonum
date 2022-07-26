@@ -1,0 +1,33 @@
+@import "../../styles/vars.scss";
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__left {
+    margin-top: 33rem;
+}
+
+.intro__text-company {
+    font-family: $secondaryFont;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: $additionalFontColor;
+    text-transform: uppercase;
+}
+
+.intro__text-info {
+    width: 70%;
+    margin-top: 4rem;
+    font-family: $secondaryFont;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $pointFontColor;
+}
+
+.intro__right {
+    width: 45%;
+}
