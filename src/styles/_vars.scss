@@ -22,7 +22,7 @@ $secondaryButtonsColor: $mainColor;
 }
 
 %secondaryTextStyle {
-    @extend %mainText;
+    @extend %mainText !optional;
     color: $pointFontColor;
     font-size: 1.8rem;
 }
