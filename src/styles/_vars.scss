@@ -34,3 +34,27 @@ $secondaryButtonsColor: $mainColor;
     text-align: center;
     color: $mainFontColor;
 }
+
+%firstButton {
+    background-color: $mainAccentColor;
+    font-family: $primaryFont;
+    color: $mainColor;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1.8rem 7.45rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 15px 30px rgba(25, 218, 140, 0.25);
+    text-align: center;
+}
+
+%secondButton {
+    background-color: $mainColor;
+    font-family: $primaryFont;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: $mainFontColor;
+    padding: 1rem 5.85rem;
+    border: 1px solid $pointFontColor;
+    border-radius: 1.5rem;
+}
