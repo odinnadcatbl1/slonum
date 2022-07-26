@@ -1,5 +1,6 @@
 import "./Intro.scss";
 import introBcg from "../../assets/img/intro.png";
+import Timer from "../Timer/Timer";
 
 const Intro: React.FC = () => {
     return (
@@ -16,6 +17,14 @@ const Intro: React.FC = () => {
                                 Участвуйте в конкурсе и получайте призы в
                                 различных номинациях детского рисунка для всех
                                 возрастов
+                            </div>
+                        </div>
+                        <div className="intro__left-actions">
+                            <button className="intro__button">
+                                Участвовать
+                            </button>
+                            <div className="intro__timer">
+                                <Timer days={"2"} />
                             </div>
                         </div>
                     </div>

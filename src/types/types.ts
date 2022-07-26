@@ -1,1 +1,3 @@
-export interface I {}
+export interface ITimer {
+    days: string;
+}

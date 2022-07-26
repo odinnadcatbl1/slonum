@@ -45,6 +45,11 @@ $secondaryButtonsColor: $mainColor;
     border-radius: 1.5rem;
     box-shadow: 0 15px 30px rgba(25, 218, 140, 0.25);
     text-align: center;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
 %secondButton {
@@ -57,4 +62,9 @@ $secondaryButtonsColor: $mainColor;
     padding: 1rem 5.85rem;
     border: 1px solid $pointFontColor;
     border-radius: 1.5rem;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }

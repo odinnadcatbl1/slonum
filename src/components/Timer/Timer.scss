@@ -1,0 +1,47 @@
+@import "../../styles/vars.scss";
+
+.timer {
+    margin-left: 7.55rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer__items {
+    font-family: $secondaryFont;
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 1.1;
+    text-align: center;
+    display: flex;
+
+    span {
+        margin-top: 1rem;
+    }
+}
+
+.timer__value {
+    margin: 0 1rem;
+    padding: 1.2rem 1.4rem;
+    background-color: $mainColor;
+    font-family: $primaryFont;
+    font-weight: 700;
+    color: $additionalAccentColor;
+    border-radius: 1.6rem;
+    box-shadow: 0 5px 30px rgba(215, 211, 225, 0.5);
+}
+
+.timer__item-name {
+    margin-top: 0.5rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 400;
+}
+
+.timer__utc {
+    @extend .timer__item-name;
+    color: $additionalFontColor;
+    font-family: $secondaryFont;
+    margin-right: 1rem;
+}

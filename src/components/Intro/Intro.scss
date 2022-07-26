@@ -31,3 +31,13 @@
 .intro__right {
     width: 45%;
 }
+
+.intro__left-actions {
+    margin-top: 6rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.intro__button {
+    @extend %firstButton;
+}
