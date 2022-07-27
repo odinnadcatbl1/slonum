@@ -11,7 +11,11 @@ const Timer: React.FC<ITimer> = ({ endtime }) => {
 
     useEffect(() => {
         if (getTimeRemaining(endtime).remainingTime > 0) {
-            setTimeout(setMinutes, 60000, +minutes - 1);
+            setTimeout(
+                setMinutes,
+                60000,
+                +getTimeRemaining(endtime).minutesWithZero
+            );
 
             setDays(getTimeRemaining(endtime).daysWithZero);
             setHours(getTimeRemaining(endtime).hoursWithZero);
