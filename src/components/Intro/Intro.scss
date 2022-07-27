@@ -14,6 +14,7 @@
     font-weight: 400;
     color: $additionalFontColor;
     text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
 
 .intro__text-info {
@@ -24,6 +25,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: $pointFontColor;
+    letter-spacing: 0.05em;
 }
 
 .intro__right {
