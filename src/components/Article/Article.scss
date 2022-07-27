@@ -1,0 +1,20 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rem;
+}
+
+.article__container {
+    max-width: 79rem;
+    @extend %mainTextStyle;
+
+    strong {
+        font-weight: 700;
+    }
+
+    span {
+        font-weight: 700;
+        color: $mainAccentColor;
+    }
+}
