@@ -1,4 +1,4 @@
-import "./Header.scss";
+//import "./Header.scss";
 import logoIcon from "../../assets/svg/logo.svg";
 
 const Header: React.FC = () => {

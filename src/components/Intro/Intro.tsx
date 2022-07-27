@@ -1,4 +1,3 @@
-import "./Intro.scss";
 import introBcg from "../../assets/img/intro.png";
 import Timer from "../Timer/Timer";
 

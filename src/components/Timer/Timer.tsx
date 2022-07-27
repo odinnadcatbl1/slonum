@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { ITimer } from "../../types/types";
 import { getTimeRemaining } from "../../utils/getTimeRemaining";
 
-import "./Timer.scss";
-
 const Timer: React.FC<ITimer> = ({ endtime }) => {
     const [minutes, setMinutes] = useState(
         getTimeRemaining(endtime).minutesWithZero
