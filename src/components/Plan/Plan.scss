@@ -1,0 +1,67 @@
+.plan {
+    background: url("../../assets/img/sky.png");
+}
+
+.plan__inner {
+    position: relative;
+}
+
+.plan__dott {
+    position: absolute;
+    top: 16rem;
+    left: 9rem;
+    z-index: 0;
+}
+
+.plan__items {
+    position: relative;
+    padding: 8.7rem 2rem 20rem;
+    z-index: 1;
+    height: 80rem;
+}
+
+.plan__item {
+    display: flex;
+    position: absolute;
+
+    &:nth-child(2) {
+        top: 29rem;
+        left: 50rem;
+    }
+
+    &:nth-child(3) {
+        top: 48rem;
+        left: 95rem;
+    }
+}
+
+.item__number {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: $additionalAccentColor;
+    color: $mainColor;
+    font-family: $primaryFont;
+    font-size: 4rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__text {
+    @extend %mainTextStyle;
+    font-size: 2rem;
+    letter-spacing: 4%;
+    color: $pointFontColor;
+    text-align: left;
+    margin-left: 5rem;
+
+    a {
+        color: $mainAccentColor;
+        text-decoration-skip-ink: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

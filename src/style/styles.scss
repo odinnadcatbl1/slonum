@@ -5,6 +5,7 @@ html {
 body {
     background-color: $mainColor;
     color: $mainFontColor;
+    overflow-x: hidden;
 }
 
 *,
@@ -54,3 +55,4 @@ h2 {
 @import "../components/Article/Article.scss";
 @import "../components/Points/Points.scss";
 @import "../components/PointsItem/PointsItem.scss";
+@import "../components/Plan/Plan.scss";
