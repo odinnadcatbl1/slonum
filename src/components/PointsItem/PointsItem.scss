@@ -3,14 +3,8 @@
     background-color: $mainColor;
     border-radius: 1.6rem;
     box-shadow: 0 5px 30px rgba(215, 211, 225, 0.5);
-    margin-top: 5rem;
-    width: 32%;
-    margin: 1.5rem 0;
-    margin-right: 2.8rem;
-
-    &:nth-child(3n) {
-        margin-right: 0;
-    }
+    flex-basis: 33%;
+    flex-grow: 1;
 }
 
 .points__text {
