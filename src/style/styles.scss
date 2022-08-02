@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: $mainColor;
     color: $mainFontColor;
 }
 
@@ -31,9 +31,20 @@ h1 {
 h2 {
     font-size: 3.2rem;
     font-family: $secondaryFont;
-    font-size: 700;
+    font-weight: 700;
     line-height: 1.3;
     color: $mainFontColor;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    span {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: #ff946e;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 0.8rem;
+        text-decoration-thickness: 0.3rem;
+    }
 }
 
 @import "../components/App/App.scss";
@@ -41,3 +52,5 @@ h2 {
 @import "../components/Intro/Intro.scss";
 @import "../components/Timer/Timer.scss";
 @import "../components/Article/Article.scss";
+@import "../components/Points/Points.scss";
+@import "../components/PointsItem/PointsItem.scss";

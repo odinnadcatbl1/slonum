@@ -1,0 +1,10 @@
+.points {
+    padding: 10rem;
+    background: url("../../assets/img/waves.png") center no-repeat;
+}
+
+.points__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}

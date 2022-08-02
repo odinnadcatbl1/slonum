@@ -1,0 +1,32 @@
+.points__item {
+    padding: 2rem 3.5rem 2.5rem;
+    background-color: $mainColor;
+    border-radius: 1.6rem;
+    box-shadow: 0 5px 30px rgba(215, 211, 225, 0.5);
+    margin-top: 5rem;
+    width: 32%;
+    margin: 1.5rem 0;
+    margin-right: 2.8rem;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+.points__text {
+    @extend %mainTextStyle;
+    font-size: 2rem;
+    color: $pointFontColor;
+    margin-top: 0.8rem;
+    text-align: left;
+
+    a {
+        color: #ff946e;
+        text-decoration-skip-ink: none;
+        transition: all 0.2s ease;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
