@@ -1,4 +1,5 @@
 import dottedLine from "../../assets/img/punctir.png";
+import plane from "../../assets/svg/plane.svg";
 
 const Plan: React.FC = () => {
     return (
@@ -37,6 +38,10 @@ const Plan: React.FC = () => {
                                 <br /> или в Личном кабинете
                             </div>
                         </div>
+                    </div>
+
+                    <div className="plane__img">
+                        <img src={plane} alt="" />
                     </div>
                 </div>
             </div>

@@ -23,15 +23,35 @@
 .plan__item {
     display: flex;
     position: absolute;
+    top: 8rem;
+
+    &:nth-child(1) {
+        .item__text {
+            animation: animationPlanText 3s;
+            animation-fill-mode: forwards;
+        }
+    }
 
     &:nth-child(2) {
         top: 30rem;
         left: 50rem;
+
+        .item__text {
+            animation: animationPlanText 2s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
     }
 
     &:nth-child(3) {
-        top: 50rem;
+        top: 49rem;
         left: 95rem;
+
+        .item__text {
+            animation: animationPlanText 3s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
     }
 }
 
@@ -55,7 +75,8 @@
     letter-spacing: 4%;
     color: $pointFontColor;
     text-align: left;
-    margin-left: 5rem;
+    margin-left: 7rem;
+    opacity: 0;
 
     a {
         color: $mainAccentColor;
@@ -63,5 +84,88 @@
         &:hover {
             text-decoration: none;
         }
+    }
+}
+
+@keyframes animationPlanText {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+        margin-left: 5rem;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 5rem;
+    }
+}
+
+.plane__img {
+    position: absolute;
+    animation: animationPlane 3s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    top: 11rem;
+    left: -17rem;
+    transform: rotate(35deg);
+    z-index: 2;
+    opacity: 0;
+}
+
+@keyframes animationPlane {
+    0% {
+        opacity: 1;
+        top: 12rem;
+        left: -15rem;
+    }
+
+    20% {
+        top: 15rem;
+        left: 10rem;
+    }
+
+    40% {
+        top: 35rem;
+        left: 50rem;
+        transform: rotate(60deg);
+    }
+
+    50% {
+        top: 50rem;
+        left: 80rem;
+    }
+
+    60% {
+        top: 58rem;
+        left: 100rem;
+        transform: rotate(35deg);
+    }
+
+    70% {
+        top: 60rem;
+        left: 120rem;
+        transform: rotate(25deg);
+    }
+
+    80% {
+        top: 55rem;
+        left: 140rem;
+        transform: rotate(15deg);
+    }
+
+    90% {
+        top: 45rem;
+        left: 160rem;
+        transform: rotate(5deg);
+    }
+
+    100% {
+        opacity: 1;
+        top: 42rem;
+        left: 170rem;
+        transform: rotate(-2deg);
     }
 }
